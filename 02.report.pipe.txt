@@ -1,0 +1,29 @@
+santanww@santanww-GL552VX:~$ ls | grep "list"
+filelist
+santanww@santanww-GL552VX:~$ wc /etc/passwd
+  41   70 2289 /etc/passwd
+santanww@santanww-GL552VX:~$ cat /proc/cpuinfo | grep "core"
+core id         : 0
+cpu cores       : 4
+core id         : 1
+cpu cores       : 4
+core id         : 2
+cpu cores       : 4
+core id         : 3
+cpu cores       : 4
+core id         : 0
+cpu cores       : 4
+core id         : 1
+cpu cores       : 4
+core id         : 2
+cpu cores       : 4
+
+santanww@santanww-GL552VX:~$ find Pictures -name"*jpg" | wc -l
+find: unknown predicate `-name*jpg'
+Try 'find --help' for more information.
+0
+santanww@santanww-GL552VX:~$ find Pictures -name "*jpg" | wc -l
+0
+santanww@santanww-GL552VX:~$ free -h |grep Mem: | awk '{print $2}'
+7.7G
+
