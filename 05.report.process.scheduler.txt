@@ -1,0 +1,13 @@
+
+santanww@santanww-GL552VX:~$ cat /proc/sched_debug | grep system
+ systemd-journal   290        20.243934       948   120         0.000000       327.281051         0.000000 0 0 /autogroup-6
+ systemd-resolve   888        59.420948      2052   120         0.000000       268.566113         0.000000 0 0 /autogroup-61
+         systemd   928        27.541946       181   120         0.000000        54.610111         0.000000 0 0 /autogroup-69
+ systemd-timesyn   686        15.987832       103   120         0.000000        15.106091         0.000000 0 0 /autogroup-31
+   systemd-udevd   311       476.014618       696   120         0.000000       864.907773         0.000000 0 0 /autogroup-10
+  systemd-logind   783        24.471939      4204   120         0.000000        89.659665         0.000000 0 0 /autogroup-53
+         systemd     1       242.170619     39932   120         0.000000      1556.063614         0.000000 0 0 /autogroup-2
+
+santanww@santanww-GL552VX:~$ cat /proc/1/sched | grep nr_switches
+nr_switches                                  :                40383
+
