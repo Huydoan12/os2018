@@ -1,3 +1,8 @@
+santanww@santanww-GL552VX:~$ ps -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+santanww  2075  2067  0 20:25 pts/0    00:00:00 bash
+santanww  2542  2075  0 20:27 pts/0    00:00:00 ps -f
+
 santanww@santanww-GL552VX:~$ ps aux | grep -i gnome-calculator | awk {'print$2'}1926
 2122
 santanww@santanww-GL552VX:~$ cat /proc/1926/status
